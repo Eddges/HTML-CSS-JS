@@ -1,0 +1,43 @@
+* {
+    margin : 0px;
+    padding : 0px;
+}
+
+.grandparent{
+    background-color: green;
+    width : auto;
+    display : flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height : 80vh;
+}
+
+.parent{
+    height : 10vh;
+    width : auto;
+    background-color: blue;
+    border: solid 1px cyan;
+    display: flex;
+    margin: 10px 20px;
+    padding: 10px 20px 30px 40px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,1);
+}
+
+#child1{
+    animation: neeche 2s;
+}
+
+@keyframes neeche{
+    from {
+        transform: translateY(0px);
+        background-color: blue;
+    }
+    50% {
+        transform: translateY(100px);
+        background-color: blueviolet;
+    }
+    100% {
+        transform: translateY(0px);
+        background-color: blue;
+    }
+}
