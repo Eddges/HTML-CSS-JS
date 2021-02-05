@@ -16,3 +16,6 @@ console.log(typeof c)
 //     -undefined
 //     -null
 
+
+var name = prompt('Enter your name')
+alert('Hi '+name+' nice to meet you')
