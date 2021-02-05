@@ -6,7 +6,6 @@ var c = false
 var x = null
 
 
-console.log(typeof c)
 
 // data types: 
 //     -Number
@@ -16,6 +15,9 @@ console.log(typeof c)
 //     -undefined
 //     -null
 
+var k = 3
 
-var name = prompt('Enter your name')
-alert('Hi '+name+' nice to meet you')
+if (k===4) {
+    console.log('Inside if statement')
+}
+
