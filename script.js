@@ -18,6 +18,14 @@ var x = null
 // == / !=
 // === / !==
 
-var age = 25
 
-var clothSize = false ? 'do this' : 'else do this'
+var name = 'Shivam'
+
+var ternary = true ? 'do this' : 'else do this'
+
+// Assignment
+// Make a clone of Instagram home/profile feed (HTML/CSS)
+// Expose a prompt to enter password
+// If password length <= 10, alert 'Password very short, change your password'
+// Else, alert 'Welcome to Instagram'
+// -> Do this using ternary operator
