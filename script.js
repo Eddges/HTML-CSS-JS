@@ -15,9 +15,9 @@ var x = null
 //     -undefined
 //     -null
 
-var k = 3
+// == / !=
+// === / !==
 
-if (k===4) {
-    console.log('Inside if statement')
-}
+var age = 25
 
+var clothSize = false ? 'do this' : 'else do this'
