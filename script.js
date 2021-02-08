@@ -186,4 +186,82 @@ console.log(ageArray)
 
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// var name = 'XYZ'
+
+// let name2 = 'A'
+// name2 = 'B'
+// name2 = 'C'
+// console.log(name2)
+
+// const name3 = 'X'
+// name3 = 'Y'
+// console.log(name3)
+
+
+// function getAddition (num1, num2) {
+//     return num1+num2
+// }
+
+// const getAddition = (num1) => {
+//     return num1+num2
+// }
+
+
+
+// console.log('Username')  //1ns
+// console.log('Dob')      //2ns
+
+
+// setTimeout(() => {
+//     console.log('After 2 seconds')
+// }, 2000)
+
+
+// setTimeout(() => {
+//     console.log('After 0 seconds') 
+
+//     setTimeout(() => {
+//         console.log('When?')
+//     }, 500)
+    
+// }, 1000) 
+
+
+// console.log('Posts from today') //4ns
+// console.log('Posts from yesterday') //5ns
+
+
+
+// const getUserVerification = new Promise((resolve, reject) => {
+
+//     const age = 17
+//     setTimeout(() => {
+//         if (age>=18) {
+//             resolve(true)
+//         } else {
+//             reject('You need to be over the age of 18 to proceed')
+//         }
+//     }, 4000)
+
+// })
+
+// getUserVerification.then((response) => {
+//     console.log(response)
+// })
+
+// getUserVerification.catch((error) => {
+//     console.log(error)
+// })
+
+
+fetch('https://jsonplaceholder.typicode.com/posts')
+.then(res => res.json())
+.then(data => {
+    console.log(data)
+})
+.catch(error => {
+    alert(error)
+})
 
