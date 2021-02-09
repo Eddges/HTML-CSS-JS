@@ -265,3 +265,29 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     alert(error)
 })
 
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+09/01/2021
+
+const divContainer = document.getElementById('container')
+
+fetch('http://www.omdbapi.com/?s=gangs&page=1&apikey=cfc4bd14')
+.then(res => res.json())
+.then(data => {
+    console.log(data.Search)
+    data.Search.forEach(iterator => {
+        console.log(iterator)
+        divContainer.innerHTML = divContainer.innerHTML +  `
+            <div class='card'>
+                <img src='${iterator.Poster}' alt='image' />
+                <span class='year'>${iterator.Year}</span>
+                <span class='title'>${iterator.Title}</span>
+                <button>Watch Now</button>
+            </div>
+            `
+    })
+
+})
